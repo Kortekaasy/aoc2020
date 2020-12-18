@@ -1,0 +1,1303 @@
+desc: --pages-as-heap=yes --massif-out-file=massif.out
+cmd: ./target/release/day15
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=20480
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=0
+mem_heap_B=188416
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=0
+mem_heap_B=237568
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=0
+mem_heap_B=249856
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=0
+mem_heap_B=258048
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=0
+mem_heap_B=393216
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=0
+mem_heap_B=430080
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=0
+mem_heap_B=442368
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=0
+mem_heap_B=446464
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=0
+mem_heap_B=450560
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n1: 450560 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 450560 0x0: ???
+#-----------
+snapshot=10
+#-----------
+time=0
+mem_heap_B=462848
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=0
+mem_heap_B=466944
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=0
+mem_heap_B=471040
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=0
+mem_heap_B=471040
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n2: 471040 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 466944 0x0: ???
+ n0: 4096 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=0
+mem_heap_B=466944
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=0
+mem_heap_B=466944
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=49296
+mem_heap_B=487424
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=49373
+mem_heap_B=491520
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=49425
+mem_heap_B=495616
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=49474
+mem_heap_B=503808
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=50985
+mem_heap_B=823296
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=52985
+mem_heap_B=831488
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=53655
+mem_heap_B=856064
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=53732
+mem_heap_B=864256
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 864256 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 466944 0x0: ???
+ n4: 397312 0x401E236: mmap (in /usr/lib/ld-2.32.so)
+  n1: 319488 0x40120DC: _dl_sysdep_read_whole_file (in /usr/lib/ld-2.32.so)
+   n1: 319488 0x4018E17: _dl_load_cache_lookup (in /usr/lib/ld-2.32.so)
+    n1: 319488 0x400AC28: _dl_map_object (in /usr/lib/ld-2.32.so)
+     n1: 319488 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+      n1: 319488 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+       n1: 319488 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+        n1: 319488 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+         n1: 319488 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+          n1: 319488 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+           n0: 319488 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+  n1: 45056 0x4009298: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 45056 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 24576 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 24576 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 24576 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 24576 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 24576 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 24576 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 24576 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n1: 20480 0x40022C8: map_doit (in /usr/lib/ld-2.32.so)
+     n1: 20480 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 20480 0x401CF72: _dl_catch_error (in /usr/lib/ld-2.32.so)
+       n1: 20480 0x40027AE: do_preload (in /usr/lib/ld-2.32.so)
+        n1: 20480 0x400340B: handle_preload_list (in /usr/lib/ld-2.32.so)
+         n1: 20480 0x40064B6: dl_main (in /usr/lib/ld-2.32.so)
+          n1: 20480 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+           n1: 20480 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+            n0: 20480 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+  n1: 24576 0x40093CE: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 24576 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 16384 0x40022C8: map_doit (in /usr/lib/ld-2.32.so)
+     n1: 16384 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 16384 0x401CF72: _dl_catch_error (in /usr/lib/ld-2.32.so)
+       n1: 16384 0x40027AE: do_preload (in /usr/lib/ld-2.32.so)
+        n1: 16384 0x400340B: handle_preload_list (in /usr/lib/ld-2.32.so)
+         n1: 16384 0x40064B6: dl_main (in /usr/lib/ld-2.32.so)
+          n1: 16384 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+           n1: 16384 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+            n0: 16384 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 8192 in 1 place, below massif's threshold (1.00%)
+  n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=24
+#-----------
+time=53784
+mem_heap_B=868352
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=53833
+mem_heap_B=876544
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=58238
+mem_heap_B=1015808
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=58297
+mem_heap_B=1081344
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=58349
+mem_heap_B=1101824
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=58398
+mem_heap_B=1110016
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=58921
+mem_heap_B=1126400
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=63920
+mem_heap_B=1232896
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=63997
+mem_heap_B=1302528
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=64049
+mem_heap_B=1318912
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 1318912 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n5: 851968 0x401E236: mmap (in /usr/lib/ld-2.32.so)
+  n1: 319488 0x40120DC: _dl_sysdep_read_whole_file (in /usr/lib/ld-2.32.so)
+   n1: 319488 0x4018E17: _dl_load_cache_lookup (in /usr/lib/ld-2.32.so)
+    n1: 319488 0x400AC28: _dl_map_object (in /usr/lib/ld-2.32.so)
+     n1: 319488 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+      n1: 319488 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+       n1: 319488 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+        n1: 319488 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+         n1: 319488 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+          n1: 319488 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+           n0: 319488 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+  n1: 290816 0x4009298: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 290816 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 270336 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 270336 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 270336 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 270336 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 270336 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 270336 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 270336 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n1: 20480 0x40022C8: map_doit (in /usr/lib/ld-2.32.so)
+     n1: 20480 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 20480 0x401CF72: _dl_catch_error (in /usr/lib/ld-2.32.so)
+       n1: 20480 0x40027AE: do_preload (in /usr/lib/ld-2.32.so)
+        n1: 20480 0x400340B: handle_preload_list (in /usr/lib/ld-2.32.so)
+         n1: 20480 0x40064B6: dl_main (in /usr/lib/ld-2.32.so)
+          n1: 20480 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+           n1: 20480 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+            n0: 20480 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+  n1: 217088 0x40093CE: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 217088 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 200704 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 200704 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 200704 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 200704 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 200704 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 200704 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 200704 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n1: 16384 0x40022C8: map_doit (in /usr/lib/ld-2.32.so)
+     n1: 16384 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 16384 0x401CF72: _dl_catch_error (in /usr/lib/ld-2.32.so)
+       n1: 16384 0x40027AE: do_preload (in /usr/lib/ld-2.32.so)
+        n1: 16384 0x400340B: handle_preload_list (in /usr/lib/ld-2.32.so)
+         n1: 16384 0x40064B6: dl_main (in /usr/lib/ld-2.32.so)
+          n1: 16384 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+           n1: 16384 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+            n0: 16384 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+  n1: 16384 0x4009F1C: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n1: 16384 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 16384 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 16384 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 16384 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 16384 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 16384 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 16384 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 16384 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+  n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n0: 466944 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=34
+#-----------
+time=64098
+mem_heap_B=1327104
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=68314
+mem_heap_B=3198976
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=68373
+mem_heap_B=4562944
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=68425
+mem_heap_B=4874240
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=68474
+mem_heap_B=4898816
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=68878
+mem_heap_B=4915200
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=93796
+mem_heap_B=4923392
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=404376
+mem_heap_B=4923392
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4923392 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n4: 4456448 0x401E236: mmap (in /usr/lib/ld-2.32.so)
+  n1: 2162688 0x4009298: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 2162688 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 2142208 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 2142208 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 2142208 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 2142208 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 2142208 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 2142208 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 2142208 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 20480 in 1 place, below massif's threshold (1.00%)
+  n1: 1925120 0x40093CE: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 1925120 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1908736 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 1908736 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 1908736 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 1908736 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 1908736 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 1908736 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 1908736 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 16384 in 1 place, below massif's threshold (1.00%)
+  n1: 319488 0x40120DC: _dl_sysdep_read_whole_file (in /usr/lib/ld-2.32.so)
+   n1: 319488 0x4018E17: _dl_load_cache_lookup (in /usr/lib/ld-2.32.so)
+    n1: 319488 0x400AC28: _dl_map_object (in /usr/lib/ld-2.32.so)
+     n1: 319488 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+      n1: 319488 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+       n1: 319488 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+        n1: 319488 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+         n1: 319488 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+          n1: 319488 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+           n0: 319488 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+  n0: 49152 in 2 places, all below massif's threshold (1.00%)
+ n0: 466944 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=42
+#-----------
+time=404376
+mem_heap_B=4919296
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=482298
+mem_heap_B=4739072
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=598640
+mem_heap_B=4747264
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=7707344
+mem_heap_B=4886528
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=14178730
+mem_heap_B=5029888
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=14838605
+mem_heap_B=5029888
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 5029888 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n3: 4136960 0x401E236: mmap (in /usr/lib/ld-2.32.so)
+  n1: 2162688 0x4009298: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 2162688 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 2142208 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 2142208 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 2142208 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 2142208 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 2142208 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 2142208 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 2142208 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 20480 in 1 place, below massif's threshold (1.00%)
+  n1: 1925120 0x40093CE: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 1925120 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1908736 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 1908736 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 1908736 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 1908736 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 1908736 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 1908736 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 1908736 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 16384 in 1 place, below massif's threshold (1.00%)
+  n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 466944 0x0: ???
+ n1: 274432 0x49BCE7B: brk (in /usr/lib/libc-2.32.so)
+  n1: 274432 0x49BCF53: sbrk (in /usr/lib/libc-2.32.so)
+   n1: 274432 0x495380C: __default_morecore (in /usr/lib/libc-2.32.so)
+    n1: 274432 0x494F0E1: sysmalloc (in /usr/lib/libc-2.32.so)
+     n2: 274432 0x4950D6D: _int_malloc (in /usr/lib/libc-2.32.so)
+      n1: 139264 0x4951D03: malloc (in /usr/lib/libc-2.32.so)
+       n1: 139264 0x10DA98: hashbrown::raw::RawTable<T>::reserve_rehash (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+        n1: 139264 0x10DC1C: hashbrown::raw::RawTable<T>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+         n1: 139264 0x10FCA9: hashbrown::map::HashMap<K,V,S>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+          n1: 139264 0x10DFB5: day15::find_number_of_turn (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+           n1: 139264 0x10E69E: day15::main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+            n1: 139264 0x10ECB2: std::rt::lang_start::{{closure}} (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+             n1: 139264 0x119842: {{closure}} (rt.rs:52)
+              n1: 139264 0x119842: std::panicking::try::do_call (panicking.rs:303)
+               n1: 139264 0x11B806: __rust_maybe_catch_panic (lib.rs:86)
+                n1: 139264 0x11A24B: try<i32,closure-0> (panicking.rs:281)
+                 n1: 139264 0x11A24B: catch_unwind<closure-0,i32> (panic.rs:394)
+                  n1: 139264 0x11A24B: std::rt::lang_start_internal (rt.rs:51)
+                   n0: 139264 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+      n1: 135168 0x49518FA: tcache_init.part.0 (in /usr/lib/libc-2.32.so)
+       n1: 135168 0x4951D6D: malloc (in /usr/lib/libc-2.32.so)
+        n1: 135168 0x493B88E: __fopen_internal (in /usr/lib/libc-2.32.so)
+         n1: 135168 0x494C3CA: pthread_getattr_np@@GLIBC_2.32 (in /usr/lib/libc-2.32.so)
+          n1: 135168 0x119F7F: get_stack_start (thread.rs:293)
+           n1: 135168 0x119F7F: get_stack_start_aligned (thread.rs:307)
+            n1: 135168 0x119F7F: init (thread.rs:326)
+             n1: 135168 0x119F7F: std::rt::lang_start_internal (rt.rs:37)
+              n0: 135168 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+ n2: 151552 0x49C0F06: mmap (in /usr/lib/libc-2.32.so)
+  n1: 143360 0x494F514: sysmalloc (in /usr/lib/libc-2.32.so)
+   n1: 143360 0x4950D6D: _int_malloc (in /usr/lib/libc-2.32.so)
+    n1: 143360 0x4951D03: malloc (in /usr/lib/libc-2.32.so)
+     n1: 143360 0x10DA98: hashbrown::raw::RawTable<T>::reserve_rehash (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+      n1: 143360 0x10DC1C: hashbrown::raw::RawTable<T>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+       n1: 143360 0x10FCA9: hashbrown::map::HashMap<K,V,S>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+        n1: 143360 0x10DFB5: day15::find_number_of_turn (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+         n1: 143360 0x10E69E: day15::main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+          n1: 143360 0x10ECB2: std::rt::lang_start::{{closure}} (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+           n1: 143360 0x119842: {{closure}} (rt.rs:52)
+            n1: 143360 0x119842: std::panicking::try::do_call (panicking.rs:303)
+             n1: 143360 0x11B806: __rust_maybe_catch_panic (lib.rs:86)
+              n1: 143360 0x11A24B: try<i32,closure-0> (panicking.rs:281)
+               n1: 143360 0x11A24B: catch_unwind<closure-0,i32> (panic.rs:394)
+                n1: 143360 0x11A24B: std::rt::lang_start_internal (rt.rs:51)
+                 n0: 143360 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+  n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=48
+#-----------
+time=14838605
+mem_heap_B=5025792
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=27558020
+mem_heap_B=5177344
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=28877183
+mem_heap_B=5177344
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 5177344 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n3: 4136960 0x401E236: mmap (in /usr/lib/ld-2.32.so)
+  n1: 2162688 0x4009298: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 2162688 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 2142208 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 2142208 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 2142208 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 2142208 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 2142208 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 2142208 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 2142208 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 20480 in 1 place, below massif's threshold (1.00%)
+  n1: 1925120 0x40093CE: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 1925120 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1908736 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 1908736 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 1908736 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 1908736 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 1908736 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 1908736 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 1908736 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 16384 in 1 place, below massif's threshold (1.00%)
+  n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 466944 0x0: ???
+ n2: 434176 0x49C0F06: mmap (in /usr/lib/libc-2.32.so)
+  n1: 425984 0x494F514: sysmalloc (in /usr/lib/libc-2.32.so)
+   n1: 425984 0x4950D6D: _int_malloc (in /usr/lib/libc-2.32.so)
+    n1: 425984 0x4951D03: malloc (in /usr/lib/libc-2.32.so)
+     n1: 425984 0x10DA98: hashbrown::raw::RawTable<T>::reserve_rehash (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+      n1: 425984 0x10DC1C: hashbrown::raw::RawTable<T>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+       n1: 425984 0x10FCA9: hashbrown::map::HashMap<K,V,S>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+        n1: 425984 0x10DFB5: day15::find_number_of_turn (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+         n1: 425984 0x10E69E: day15::main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+          n1: 425984 0x10ECB2: std::rt::lang_start::{{closure}} (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+           n1: 425984 0x119842: {{closure}} (rt.rs:52)
+            n1: 425984 0x119842: std::panicking::try::do_call (panicking.rs:303)
+             n1: 425984 0x11B806: __rust_maybe_catch_panic (lib.rs:86)
+              n1: 425984 0x11A24B: try<i32,closure-0> (panicking.rs:281)
+               n1: 425984 0x11A24B: catch_unwind<closure-0,i32> (panic.rs:394)
+                n1: 425984 0x11A24B: std::rt::lang_start_internal (rt.rs:51)
+                 n0: 425984 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+  n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n1: 139264 0x49BCE7B: brk (in /usr/lib/libc-2.32.so)
+  n1: 139264 0x49BCF53: sbrk (in /usr/lib/libc-2.32.so)
+   n1: 139264 0x495380C: __default_morecore (in /usr/lib/libc-2.32.so)
+    n1: 139264 0x494F0E1: sysmalloc (in /usr/lib/libc-2.32.so)
+     n2: 139264 0x4950D6D: _int_malloc (in /usr/lib/libc-2.32.so)
+      n1: 135168 0x49518FA: tcache_init.part.0 (in /usr/lib/libc-2.32.so)
+       n1: 135168 0x4951D6D: malloc (in /usr/lib/libc-2.32.so)
+        n1: 135168 0x493B88E: __fopen_internal (in /usr/lib/libc-2.32.so)
+         n1: 135168 0x494C3CA: pthread_getattr_np@@GLIBC_2.32 (in /usr/lib/libc-2.32.so)
+          n1: 135168 0x119F7F: get_stack_start (thread.rs:293)
+           n1: 135168 0x119F7F: get_stack_start_aligned (thread.rs:307)
+            n1: 135168 0x119F7F: init (thread.rs:326)
+             n1: 135168 0x119F7F: std::rt::lang_start_internal (rt.rs:37)
+              n0: 135168 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+      n0: 4096 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=51
+#-----------
+time=28877183
+mem_heap_B=5173248
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=55130202
+mem_heap_B=5595136
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=57768329
+mem_heap_B=5595136
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 5595136 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n3: 4136960 0x401E236: mmap (in /usr/lib/ld-2.32.so)
+  n1: 2162688 0x4009298: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 2162688 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 2142208 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 2142208 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 2142208 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 2142208 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 2142208 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 2142208 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 2142208 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 20480 in 1 place, below massif's threshold (1.00%)
+  n1: 1925120 0x40093CE: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 1925120 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1908736 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 1908736 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 1908736 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 1908736 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 1908736 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 1908736 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 1908736 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 16384 in 1 place, below massif's threshold (1.00%)
+  n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n2: 851968 0x49C0F06: mmap (in /usr/lib/libc-2.32.so)
+  n1: 843776 0x494F514: sysmalloc (in /usr/lib/libc-2.32.so)
+   n1: 843776 0x4950D6D: _int_malloc (in /usr/lib/libc-2.32.so)
+    n1: 843776 0x4951D03: malloc (in /usr/lib/libc-2.32.so)
+     n1: 843776 0x10DA98: hashbrown::raw::RawTable<T>::reserve_rehash (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+      n1: 843776 0x10DC1C: hashbrown::raw::RawTable<T>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+       n1: 843776 0x10FCA9: hashbrown::map::HashMap<K,V,S>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+        n1: 843776 0x10DFB5: day15::find_number_of_turn (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+         n1: 843776 0x10E69E: day15::main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+          n1: 843776 0x10ECB2: std::rt::lang_start::{{closure}} (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+           n1: 843776 0x119842: {{closure}} (rt.rs:52)
+            n1: 843776 0x119842: std::panicking::try::do_call (panicking.rs:303)
+             n1: 843776 0x11B806: __rust_maybe_catch_panic (lib.rs:86)
+              n1: 843776 0x11A24B: try<i32,closure-0> (panicking.rs:281)
+               n1: 843776 0x11A24B: catch_unwind<closure-0,i32> (panic.rs:394)
+                n1: 843776 0x11A24B: std::rt::lang_start_internal (rt.rs:51)
+                 n0: 843776 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+  n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n0: 466944 0x0: ???
+ n1: 139264 0x49BCE7B: brk (in /usr/lib/libc-2.32.so)
+  n1: 139264 0x49BCF53: sbrk (in /usr/lib/libc-2.32.so)
+   n1: 139264 0x495380C: __default_morecore (in /usr/lib/libc-2.32.so)
+    n1: 139264 0x494F0E1: sysmalloc (in /usr/lib/libc-2.32.so)
+     n2: 139264 0x4950D6D: _int_malloc (in /usr/lib/libc-2.32.so)
+      n1: 135168 0x49518FA: tcache_init.part.0 (in /usr/lib/libc-2.32.so)
+       n1: 135168 0x4951D6D: malloc (in /usr/lib/libc-2.32.so)
+        n1: 135168 0x493B88E: __fopen_internal (in /usr/lib/libc-2.32.so)
+         n1: 135168 0x494C3CA: pthread_getattr_np@@GLIBC_2.32 (in /usr/lib/libc-2.32.so)
+          n1: 135168 0x119F7F: get_stack_start (thread.rs:293)
+           n1: 135168 0x119F7F: get_stack_start_aligned (thread.rs:307)
+            n1: 135168 0x119F7F: init (thread.rs:326)
+             n1: 135168 0x119F7F: std::rt::lang_start_internal (rt.rs:37)
+              n0: 135168 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+      n0: 4096 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=57768329
+mem_heap_B=5591040
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=112175806
+mem_heap_B=6430720
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=117451703
+mem_heap_B=6430720
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 6430720 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n3: 4136960 0x401E236: mmap (in /usr/lib/ld-2.32.so)
+  n1: 2162688 0x4009298: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 2162688 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 2142208 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 2142208 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 2142208 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 2142208 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 2142208 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 2142208 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 2142208 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 20480 in 1 place, below massif's threshold (1.00%)
+  n1: 1925120 0x40093CE: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 1925120 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1908736 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 1908736 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 1908736 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 1908736 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 1908736 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 1908736 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 1908736 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 16384 in 1 place, below massif's threshold (1.00%)
+  n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n2: 1687552 0x49C0F06: mmap (in /usr/lib/libc-2.32.so)
+  n1: 1679360 0x494F514: sysmalloc (in /usr/lib/libc-2.32.so)
+   n1: 1679360 0x4950D6D: _int_malloc (in /usr/lib/libc-2.32.so)
+    n1: 1679360 0x4951D03: malloc (in /usr/lib/libc-2.32.so)
+     n1: 1679360 0x10DA98: hashbrown::raw::RawTable<T>::reserve_rehash (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+      n1: 1679360 0x10DC1C: hashbrown::raw::RawTable<T>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+       n1: 1679360 0x10FCA9: hashbrown::map::HashMap<K,V,S>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+        n1: 1679360 0x10DFB5: day15::find_number_of_turn (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+         n1: 1679360 0x10E69E: day15::main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+          n1: 1679360 0x10ECB2: std::rt::lang_start::{{closure}} (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+           n1: 1679360 0x119842: {{closure}} (rt.rs:52)
+            n1: 1679360 0x119842: std::panicking::try::do_call (panicking.rs:303)
+             n1: 1679360 0x11B806: __rust_maybe_catch_panic (lib.rs:86)
+              n1: 1679360 0x11A24B: try<i32,closure-0> (panicking.rs:281)
+               n1: 1679360 0x11A24B: catch_unwind<closure-0,i32> (panic.rs:394)
+                n1: 1679360 0x11A24B: std::rt::lang_start_internal (rt.rs:51)
+                 n0: 1679360 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+  n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n0: 466944 0x0: ???
+ n1: 139264 0x49BCE7B: brk (in /usr/lib/libc-2.32.so)
+  n1: 139264 0x49BCF53: sbrk (in /usr/lib/libc-2.32.so)
+   n1: 139264 0x495380C: __default_morecore (in /usr/lib/libc-2.32.so)
+    n1: 139264 0x494F0E1: sysmalloc (in /usr/lib/libc-2.32.so)
+     n2: 139264 0x4950D6D: _int_malloc (in /usr/lib/libc-2.32.so)
+      n1: 135168 0x49518FA: tcache_init.part.0 (in /usr/lib/libc-2.32.so)
+       n1: 135168 0x4951D6D: malloc (in /usr/lib/libc-2.32.so)
+        n1: 135168 0x493B88E: __fopen_internal (in /usr/lib/libc-2.32.so)
+         n1: 135168 0x494C3CA: pthread_getattr_np@@GLIBC_2.32 (in /usr/lib/libc-2.32.so)
+          n1: 135168 0x119F7F: get_stack_start (thread.rs:293)
+           n1: 135168 0x119F7F: get_stack_start_aligned (thread.rs:307)
+            n1: 135168 0x119F7F: init (thread.rs:326)
+             n1: 135168 0x119F7F: std::rt::lang_start_internal (rt.rs:37)
+              n0: 135168 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+      n0: 4096 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=57
+#-----------
+time=117451703
+mem_heap_B=6426624
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=229418793
+mem_heap_B=8101888
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=239970401
+mem_heap_B=8101888
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 8101888 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n3: 4136960 0x401E236: mmap (in /usr/lib/ld-2.32.so)
+  n1: 2162688 0x4009298: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 2162688 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 2142208 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 2142208 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 2142208 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 2142208 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 2142208 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 2142208 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 2142208 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 20480 in 1 place, below massif's threshold (1.00%)
+  n1: 1925120 0x40093CE: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 1925120 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1908736 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 1908736 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 1908736 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 1908736 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 1908736 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 1908736 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 1908736 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 16384 in 1 place, below massif's threshold (1.00%)
+  n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n2: 3358720 0x49C0F06: mmap (in /usr/lib/libc-2.32.so)
+  n1: 3350528 0x494F514: sysmalloc (in /usr/lib/libc-2.32.so)
+   n1: 3350528 0x4950D6D: _int_malloc (in /usr/lib/libc-2.32.so)
+    n1: 3350528 0x4951D03: malloc (in /usr/lib/libc-2.32.so)
+     n1: 3350528 0x10DA98: hashbrown::raw::RawTable<T>::reserve_rehash (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+      n1: 3350528 0x10DC1C: hashbrown::raw::RawTable<T>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+       n1: 3350528 0x10FCA9: hashbrown::map::HashMap<K,V,S>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+        n1: 3350528 0x10DFB5: day15::find_number_of_turn (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+         n1: 3350528 0x10E69E: day15::main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+          n1: 3350528 0x10ECB2: std::rt::lang_start::{{closure}} (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+           n1: 3350528 0x119842: {{closure}} (rt.rs:52)
+            n1: 3350528 0x119842: std::panicking::try::do_call (panicking.rs:303)
+             n1: 3350528 0x11B806: __rust_maybe_catch_panic (lib.rs:86)
+              n1: 3350528 0x11A24B: try<i32,closure-0> (panicking.rs:281)
+               n1: 3350528 0x11A24B: catch_unwind<closure-0,i32> (panic.rs:394)
+                n1: 3350528 0x11A24B: std::rt::lang_start_internal (rt.rs:51)
+                 n0: 3350528 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+  n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n0: 466944 0x0: ???
+ n1: 139264 0x49BCE7B: brk (in /usr/lib/libc-2.32.so)
+  n1: 139264 0x49BCF53: sbrk (in /usr/lib/libc-2.32.so)
+   n1: 139264 0x495380C: __default_morecore (in /usr/lib/libc-2.32.so)
+    n1: 139264 0x494F0E1: sysmalloc (in /usr/lib/libc-2.32.so)
+     n2: 139264 0x4950D6D: _int_malloc (in /usr/lib/libc-2.32.so)
+      n1: 135168 0x49518FA: tcache_init.part.0 (in /usr/lib/libc-2.32.so)
+       n1: 135168 0x4951D6D: malloc (in /usr/lib/libc-2.32.so)
+        n1: 135168 0x493B88E: __fopen_internal (in /usr/lib/libc-2.32.so)
+         n1: 135168 0x494C3CA: pthread_getattr_np@@GLIBC_2.32 (in /usr/lib/libc-2.32.so)
+          n1: 135168 0x119F7F: get_stack_start (thread.rs:293)
+           n1: 135168 0x119F7F: get_stack_start_aligned (thread.rs:307)
+            n1: 135168 0x119F7F: init (thread.rs:326)
+             n1: 135168 0x119F7F: std::rt::lang_start_internal (rt.rs:37)
+              n0: 135168 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+      n0: 4096 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=60
+#-----------
+time=239970401
+mem_heap_B=8097792
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=470646677
+mem_heap_B=11444224
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=491749590
+mem_heap_B=11444224
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 11444224 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n2: 6701056 0x49C0F06: mmap (in /usr/lib/libc-2.32.so)
+  n1: 6692864 0x494F514: sysmalloc (in /usr/lib/libc-2.32.so)
+   n1: 6692864 0x4950D6D: _int_malloc (in /usr/lib/libc-2.32.so)
+    n1: 6692864 0x4951D03: malloc (in /usr/lib/libc-2.32.so)
+     n1: 6692864 0x10DA98: hashbrown::raw::RawTable<T>::reserve_rehash (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+      n1: 6692864 0x10DC1C: hashbrown::raw::RawTable<T>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+       n1: 6692864 0x10FCA9: hashbrown::map::HashMap<K,V,S>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+        n1: 6692864 0x10DFB5: day15::find_number_of_turn (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+         n1: 6692864 0x10E69E: day15::main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+          n1: 6692864 0x10ECB2: std::rt::lang_start::{{closure}} (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+           n1: 6692864 0x119842: {{closure}} (rt.rs:52)
+            n1: 6692864 0x119842: std::panicking::try::do_call (panicking.rs:303)
+             n1: 6692864 0x11B806: __rust_maybe_catch_panic (lib.rs:86)
+              n1: 6692864 0x11A24B: try<i32,closure-0> (panicking.rs:281)
+               n1: 6692864 0x11A24B: catch_unwind<closure-0,i32> (panic.rs:394)
+                n1: 6692864 0x11A24B: std::rt::lang_start_internal (rt.rs:51)
+                 n0: 6692864 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+  n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n3: 4136960 0x401E236: mmap (in /usr/lib/ld-2.32.so)
+  n1: 2162688 0x4009298: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 2162688 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 2142208 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 2142208 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 2142208 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 2142208 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 2142208 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 2142208 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 2142208 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 20480 in 1 place, below massif's threshold (1.00%)
+  n1: 1925120 0x40093CE: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 1925120 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1908736 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 1908736 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 1908736 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 1908736 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 1908736 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 1908736 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 1908736 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 16384 in 1 place, below massif's threshold (1.00%)
+  n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 466944 0x0: ???
+ n1: 139264 0x49BCE7B: brk (in /usr/lib/libc-2.32.so)
+  n1: 139264 0x49BCF53: sbrk (in /usr/lib/libc-2.32.so)
+   n1: 139264 0x495380C: __default_morecore (in /usr/lib/libc-2.32.so)
+    n1: 139264 0x494F0E1: sysmalloc (in /usr/lib/libc-2.32.so)
+     n2: 139264 0x4950D6D: _int_malloc (in /usr/lib/libc-2.32.so)
+      n1: 135168 0x49518FA: tcache_init.part.0 (in /usr/lib/libc-2.32.so)
+       n1: 135168 0x4951D6D: malloc (in /usr/lib/libc-2.32.so)
+        n1: 135168 0x493B88E: __fopen_internal (in /usr/lib/libc-2.32.so)
+         n1: 135168 0x494C3CA: pthread_getattr_np@@GLIBC_2.32 (in /usr/lib/libc-2.32.so)
+          n1: 135168 0x119F7F: get_stack_start (thread.rs:293)
+           n1: 135168 0x119F7F: get_stack_start_aligned (thread.rs:307)
+            n1: 135168 0x119F7F: init (thread.rs:326)
+             n1: 135168 0x119F7F: std::rt::lang_start_internal (rt.rs:37)
+              n0: 135168 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+      n0: 4096 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=63
+#-----------
+time=491749590
+mem_heap_B=11440128
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=966508814
+mem_heap_B=18128896
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=1008714310
+mem_heap_B=18128896
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n4: 18128896 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n2: 13385728 0x49C0F06: mmap (in /usr/lib/libc-2.32.so)
+  n1: 13377536 0x494F514: sysmalloc (in /usr/lib/libc-2.32.so)
+   n1: 13377536 0x4950D6D: _int_malloc (in /usr/lib/libc-2.32.so)
+    n1: 13377536 0x4951D03: malloc (in /usr/lib/libc-2.32.so)
+     n1: 13377536 0x10DA98: hashbrown::raw::RawTable<T>::reserve_rehash (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+      n1: 13377536 0x10DC1C: hashbrown::raw::RawTable<T>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+       n1: 13377536 0x10FCA9: hashbrown::map::HashMap<K,V,S>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+        n1: 13377536 0x10DFB5: day15::find_number_of_turn (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+         n1: 13377536 0x10E69E: day15::main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+          n1: 13377536 0x10ECB2: std::rt::lang_start::{{closure}} (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+           n1: 13377536 0x119842: {{closure}} (rt.rs:52)
+            n1: 13377536 0x119842: std::panicking::try::do_call (panicking.rs:303)
+             n1: 13377536 0x11B806: __rust_maybe_catch_panic (lib.rs:86)
+              n1: 13377536 0x11A24B: try<i32,closure-0> (panicking.rs:281)
+               n1: 13377536 0x11A24B: catch_unwind<closure-0,i32> (panic.rs:394)
+                n1: 13377536 0x11A24B: std::rt::lang_start_internal (rt.rs:51)
+                 n0: 13377536 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+  n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n3: 4136960 0x401E236: mmap (in /usr/lib/ld-2.32.so)
+  n1: 2162688 0x4009298: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 2162688 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 2142208 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 2142208 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 2142208 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 2142208 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 2142208 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 2142208 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 2142208 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 20480 in 1 place, below massif's threshold (1.00%)
+  n1: 1925120 0x40093CE: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 1925120 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1908736 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 1908736 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 1908736 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 1908736 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 1908736 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 1908736 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 1908736 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 16384 in 1 place, below massif's threshold (1.00%)
+  n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 466944 0x0: ???
+ n0: 139264 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=66
+#-----------
+time=1008714310
+mem_heap_B=18124800
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=1984781702
+mem_heap_B=31498240
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=2069192607
+mem_heap_B=31498240
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n4: 31498240 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n2: 26755072 0x49C0F06: mmap (in /usr/lib/libc-2.32.so)
+  n1: 26746880 0x494F514: sysmalloc (in /usr/lib/libc-2.32.so)
+   n1: 26746880 0x4950D6D: _int_malloc (in /usr/lib/libc-2.32.so)
+    n1: 26746880 0x4951D03: malloc (in /usr/lib/libc-2.32.so)
+     n1: 26746880 0x10DA98: hashbrown::raw::RawTable<T>::reserve_rehash (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+      n1: 26746880 0x10DC1C: hashbrown::raw::RawTable<T>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+       n1: 26746880 0x10FCA9: hashbrown::map::HashMap<K,V,S>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+        n1: 26746880 0x10DFB5: day15::find_number_of_turn (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+         n1: 26746880 0x10E69E: day15::main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+          n1: 26746880 0x10ECB2: std::rt::lang_start::{{closure}} (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+           n1: 26746880 0x119842: {{closure}} (rt.rs:52)
+            n1: 26746880 0x119842: std::panicking::try::do_call (panicking.rs:303)
+             n1: 26746880 0x11B806: __rust_maybe_catch_panic (lib.rs:86)
+              n1: 26746880 0x11A24B: try<i32,closure-0> (panicking.rs:281)
+               n1: 26746880 0x11A24B: catch_unwind<closure-0,i32> (panic.rs:394)
+                n1: 26746880 0x11A24B: std::rt::lang_start_internal (rt.rs:51)
+                 n0: 26746880 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+  n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n3: 4136960 0x401E236: mmap (in /usr/lib/ld-2.32.so)
+  n1: 2162688 0x4009298: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 2162688 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 2142208 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 2142208 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 2142208 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 2142208 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 2142208 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 2142208 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 2142208 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 20480 in 1 place, below massif's threshold (1.00%)
+  n1: 1925120 0x40093CE: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 1925120 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1908736 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 1908736 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 1908736 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 1908736 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 1908736 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 1908736 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 1908736 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 16384 in 1 place, below massif's threshold (1.00%)
+  n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 466944 0x0: ???
+ n0: 139264 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=69
+#-----------
+time=2069192607
+mem_heap_B=31494144
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=4072451894
+mem_heap_B=58236928
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=4241273590
+mem_heap_B=58236928
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 58236928 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n2: 53493760 0x49C0F06: mmap (in /usr/lib/libc-2.32.so)
+  n1: 53485568 0x494F514: sysmalloc (in /usr/lib/libc-2.32.so)
+   n1: 53485568 0x4950D6D: _int_malloc (in /usr/lib/libc-2.32.so)
+    n1: 53485568 0x4951D03: malloc (in /usr/lib/libc-2.32.so)
+     n1: 53485568 0x10DA98: hashbrown::raw::RawTable<T>::reserve_rehash (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+      n1: 53485568 0x10DC1C: hashbrown::raw::RawTable<T>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+       n1: 53485568 0x10FCA9: hashbrown::map::HashMap<K,V,S>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+        n1: 53485568 0x10DFB5: day15::find_number_of_turn (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+         n1: 53485568 0x10E69E: day15::main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+          n1: 53485568 0x10ECB2: std::rt::lang_start::{{closure}} (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+           n1: 53485568 0x119842: {{closure}} (rt.rs:52)
+            n1: 53485568 0x119842: std::panicking::try::do_call (panicking.rs:303)
+             n1: 53485568 0x11B806: __rust_maybe_catch_panic (lib.rs:86)
+              n1: 53485568 0x11A24B: try<i32,closure-0> (panicking.rs:281)
+               n1: 53485568 0x11A24B: catch_unwind<closure-0,i32> (panic.rs:394)
+                n1: 53485568 0x11A24B: std::rt::lang_start_internal (rt.rs:51)
+                 n0: 53485568 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+  n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n3: 4136960 0x401E236: mmap (in /usr/lib/ld-2.32.so)
+  n1: 2162688 0x4009298: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 2162688 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 2142208 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 2142208 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 2142208 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 2142208 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 2142208 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 2142208 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 2142208 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 20480 in 1 place, below massif's threshold (1.00%)
+  n1: 1925120 0x40093CE: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 1925120 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1908736 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 1908736 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 1908736 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 1908736 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 1908736 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 1908736 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 1908736 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 16384 in 1 place, below massif's threshold (1.00%)
+  n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 606208 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=72
+#-----------
+time=4241273590
+mem_heap_B=58232832
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=8349863902
+mem_heap_B=111714304
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=8687506963
+mem_heap_B=111714304
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=peak
+n3: 111714304 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n2: 106971136 0x49C0F06: mmap (in /usr/lib/libc-2.32.so)
+  n1: 106962944 0x494F514: sysmalloc (in /usr/lib/libc-2.32.so)
+   n1: 106962944 0x4950D6D: _int_malloc (in /usr/lib/libc-2.32.so)
+    n1: 106962944 0x4951D03: malloc (in /usr/lib/libc-2.32.so)
+     n1: 106962944 0x10DA98: hashbrown::raw::RawTable<T>::reserve_rehash (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+      n1: 106962944 0x10DC1C: hashbrown::raw::RawTable<T>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+       n1: 106962944 0x10FCA9: hashbrown::map::HashMap<K,V,S>::insert (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+        n1: 106962944 0x10DFB5: day15::find_number_of_turn (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+         n1: 106962944 0x10E69E: day15::main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+          n1: 106962944 0x10ECB2: std::rt::lang_start::{{closure}} (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+           n1: 106962944 0x119842: {{closure}} (rt.rs:52)
+            n1: 106962944 0x119842: std::panicking::try::do_call (panicking.rs:303)
+             n1: 106962944 0x11B806: __rust_maybe_catch_panic (lib.rs:86)
+              n1: 106962944 0x11A24B: try<i32,closure-0> (panicking.rs:281)
+               n1: 106962944 0x11A24B: catch_unwind<closure-0,i32> (panic.rs:394)
+                n1: 106962944 0x11A24B: std::rt::lang_start_internal (rt.rs:51)
+                 n0: 106962944 0x10ECA1: main (in /home/yoep/Workspace/adventOfCode2020/day15/target/release/day15)
+  n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n3: 4136960 0x401E236: mmap (in /usr/lib/ld-2.32.so)
+  n1: 2162688 0x4009298: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 2162688 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 2142208 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 2142208 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 2142208 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 2142208 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 2142208 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 2142208 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 2142208 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 20480 in 1 place, below massif's threshold (1.00%)
+  n1: 1925120 0x40093CE: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n2: 1925120 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1908736 0x400F1E4: openaux (in /usr/lib/ld-2.32.so)
+     n1: 1908736 0x401CECD: _dl_catch_exception (in /usr/lib/ld-2.32.so)
+      n1: 1908736 0x400F572: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+       n1: 1908736 0x4004F4C: dl_main (in /usr/lib/ld-2.32.so)
+        n1: 1908736 0x401B991: _dl_sysdep_start (in /usr/lib/ld-2.32.so)
+         n1: 1908736 0x4002FF0: _dl_start (in /usr/lib/ld-2.32.so)
+          n0: 1908736 0x4002097: ??? (in /usr/lib/ld-2.32.so)
+    n0: 16384 in 1 place, below massif's threshold (1.00%)
+  n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 606208 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=75
+#-----------
+time=8687506963
+mem_heap_B=111710208
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=16831182601
+mem_heap_B=76054528
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=16831195970
+mem_heap_B=4747264
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

@@ -1,0 +1,15 @@
+WHITESPACE = _{ " " }
+newline = _{ "\r\n" | "\n" }
+
+num = { ASCII_DIGIT+ }
+
+MUL = { "*" }
+ADD = { "+" }
+op = _{ MUL | ADD }
+expr = { val ~ (op ~ val)* }
+
+LPAREN = _{ "(" }
+RPAREN = _{ ")" }
+val = { num | LPAREN ~ expr ~ RPAREN }
+
+calculation = { SOI ~ expr ~ (newline ~ expr)* ~ EOI }
